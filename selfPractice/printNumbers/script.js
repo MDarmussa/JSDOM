@@ -3,30 +3,33 @@ let n1 = document.getElementById('n1');
 let n2 = document.getElementById('n2');
 let submitButton = document.getElementById('submit');
 let result = document.getElementById('result');
-console.log(parseInt(n1.value))
-console.log(n2.value)
-//parseInt
+// console.log(parseInt(n1.value))
+// console.log(n2.value)
+//parseInt ---> convert from strings to integers
 let holder = [];
 function printNumbers (num1, num2) {
      for(i = num1; i <= num2; i++) {
           holder.push(i);
-          console.log(holder, "14")
+          // console.log(holder, "14");
      }
      return holder;
 }
+
 submitButton.addEventListener('click', (e) => {
      e.preventDefault();
      let num1 = parseInt(n1.value);
      let num2 = parseInt(n2.value);
      printNumbers(num1, num2)
-     console.log(holder)
-     holder.map((num) => {
-          result.innerHTML += num;
-     });
-     // result.innerHTML = 
-     // `<ul>
-     // ${holder.map(num => `<li style="list-style: none">${num}</li>`).join("")}
-     // </ul>`;
+     //-------- 
+     // console.log(holder)
+     // holder.map((num) => {
+     //      result.innerHTML += num;
+     // });
+     //---------
+     result.innerHTML = 
+     `<ul>
+     ${holder.map(num => `<li style="list-style: none">${num}</li>`).join("")}
+     </ul>`;
      
 })
 
