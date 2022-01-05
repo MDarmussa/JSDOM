@@ -1,15 +1,26 @@
-/* *::before *::after {
+*, *:before, *:after{
      box-sizing: border-box;
-} */
+ }
 
-/* html {
-     font-size: 16px;
-} */
-
-
+.darkBody {
+     background-color: black;
+     color: orange;
 
 
-/* body {
-     background-color: skyblue;
+}
+
+.lightButton {
+
+}
+
+
+#frontPageH {
+     font-size: 8rem;
+     font-style: italic;
+
+}
+/* 
+li {
+     list-style-type: none;
 } */
 

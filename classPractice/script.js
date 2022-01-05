@@ -192,6 +192,8 @@ darkButton.addEventListener('click', function(event){
      location.reload();
 
 
+
+
 })
 
 })
@@ -200,7 +202,6 @@ darkButton.addEventListener('click', function(event){
 //styling
 document.getElementById('body').style.textAlign = 'center';
 document.getElementById('body').style.animation = 'blue';
-
 
      frontPageH.style.fontSize = '70px'
      darkButton.style.background = 'black'

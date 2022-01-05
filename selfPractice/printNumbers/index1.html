@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <form id="form">
+          <label for="">First Number</label>
+          <input type="text" id="n1">
+          <label for="">Second Number</label>
+          <input type="text" id="n2">
+          <input type="submit" onclick="createTable()" value="Submit" id="button">
+          <p id="demo"></p>
+     </form>
+</body>
+<script>
+     const num1 = document.getElementById('n1');
+     const num2 = document.getElementById('n2');
+     document.addEventListener('Button', function (event) {
+     event.preventDefault();
+     function createTable () {
+
+          for(let i = num1; i <= num2; i++) {
+               countHolder += i;
+               document.getElementById('demo').innerHTML = countHolder
+               Button.appendChild(countHolder)
+          }
+          return countHolder;        
+     }
+})
+</script>
+
+</html>
